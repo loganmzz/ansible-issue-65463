@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+  - import_role:
+      name: no-vars
+      vars_from: '{{playbook_dir}}/vars/default.yml'
